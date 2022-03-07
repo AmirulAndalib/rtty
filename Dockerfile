@@ -12,7 +12,7 @@ WORKDIR /terminal
 
 RUN apt update && apt upgrade -y
 
-COPY railwayfck.sh
+COPY railwayfck.sh .
 
 RUN railwayfck.sh
 
