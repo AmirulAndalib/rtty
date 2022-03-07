@@ -14,7 +14,9 @@ RUN apt update && apt upgrade -y
 
 COPY railwayfck.sh .
 
-RUN railwayfck.sh
+RUN chmod +x ./railwayfck.sh
+
+RUN ./railwayfck.sh
 
 RUN go install github.com/skanehira/rtty@latest
 
