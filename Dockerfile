@@ -7,7 +7,9 @@ WORKDIR /terminal
 
 RUN apt update && apt upgrade -y
 
-RUN apt install git wget rclone aria2c curl p7zip-full p7zip-rar unzip zip golang python3 python3-pip -y
+RUN copy railwayfck.sh
+
+RUN railwayfck.sh
 
 RUN go install github.com/skanehira/rtty@latest
 
