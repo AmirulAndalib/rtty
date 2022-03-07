@@ -18,7 +18,7 @@ RUN chmod +x ./railwayfck.sh
 
 RUN ./railwayfck.sh
 
-RUN go install github.com/skanehira/rtty@latest
+RUN go get github.com/skanehira/rtty@latest
 
 COPY . .
 
