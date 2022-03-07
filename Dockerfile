@@ -1,5 +1,10 @@
 FROM ubuntu:latest
 
+
+ENV TZ="Asia/Dhaka"
+ENV DEBIAN_FRONTEND=noninteractive
+
+
 RUN mkdir /terminal
 
 WORKDIR /terminal
