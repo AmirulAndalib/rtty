@@ -19,7 +19,7 @@ RUN chmod +x ./railwayfck.sh
 
 RUN ./railwayfck.sh
 
-RUN go mod init
+RUN go mod init example.com/m
 
 RUN go get github.com/skanehira/rtty@latest
 
